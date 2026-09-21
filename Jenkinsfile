@@ -21,7 +21,8 @@ steps {
 bat 'cd'
 bat'dir'
 bat'dir pom.xml'
-
+}
+}
 stage('Run Playwright Tests') {
 steps {
 bat 'mvn test'
