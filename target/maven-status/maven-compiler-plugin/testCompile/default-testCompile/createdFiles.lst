@@ -1,4 +1,6 @@
 base\BaseTest.class
+pages\TextboxPage.class
 tests\LoginTest.class
 pages\LoginPage.class
+tests\TextBoxTest.class
 pages\ProfilePage.class

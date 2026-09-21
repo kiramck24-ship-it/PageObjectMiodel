@@ -9,8 +9,8 @@ public class LoginTest extends BaseTest {
         LoginPage login = new LoginPage(test.page);
         login.login("TestUser", "Test@123");
          ProfilePage profile = new ProfilePage(test.page);
-        System.out.println(profile.getPageTitle());
+         System.out.println(profile.getPageTitle());
         System.out.println(profile.isLogoutDisplayed());
-        test.tearDown();
+                test.tearDown();
     }
 }
