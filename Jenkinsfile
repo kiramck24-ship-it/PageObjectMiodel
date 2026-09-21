@@ -20,7 +20,7 @@ stage('Check Workspace') {
 steps {
 bat 'cd'
 bat'dir'
-bat'pom.xml'
+bat'dir pom.xml'
 
 stage('Run Playwright Tests') {
 steps {
