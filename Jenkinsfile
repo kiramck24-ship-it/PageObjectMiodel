@@ -10,29 +10,24 @@ checkout scm
 }
 }
 
-stage('Build') {
+stage('Build and Test') {
 steps {
-bat 'mvn clean install -DskipTests'
+bat 'mvn clean test'
 }
 }
 
-stage('Check Workspace') {
+stage('Check Test Reports') {
 steps {
-bat 'cd'
-bat'dir'
-bat'dir pom.xml'
-}
-}
-stage('Run Playwright Tests') {
-steps {
-bat 'mvn test'
+bat 'dir target\\surefire-reports'
 }
 }
 }
 
 post {
 always {
-junit 'target/surefire-reports/TEST-*.xml'
+junit allowEmptyResults: false,
+testResults: 'target/surefire-reports/*.xml'
 }
 }
 }
+
