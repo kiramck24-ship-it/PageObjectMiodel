@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="0.259" tests="0" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="24.215" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-25.0.3.9-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\ksiva\AppData\Local\Temp\surefire9100332638705042219\surefirebooter-20260922194145226_3.jar C:\Users\ksiva\AppData\Local\Temp\surefire9100332638705042219 2026-09-22T19-41-45_117-jvmRun1 surefire-20260922194145226_1tmp surefire_0-20260922194145226_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\ksiva\AppData\Local\Temp\surefire7519256611504572514\surefirebooter-20260922202154512_3.jar C:\Users\ksiva\AppData\Local\Temp\surefire7519256611504572514 2026-09-22T20-21-54_398-jvmRun1 surefire-20260922202154512_1tmp surefire_0-20260922202154512_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\ksiva\eclipse-workspace\PageObjectMiodel\target\test-classes;C:\Users\ksiva\eclipse-workspace\PageObjectMiodel\target\classes;C:\Users\ksiva\.m2\repository\com\microsoft\playwright\playwright\1.54.0\playwright-1.54.0.jar;C:\Users\ksiva\.m2\repository\com\google\code\gson\gson\2.12.1\gson-2.12.1.jar;C:\Users\ksiva\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\ksiva\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\ksiva\.m2\repository\com\microsoft\playwright\driver\1.54.0\driver-1.54.0.jar;C:\Users\ksiva\.m2\repository\com\microsoft\playwright\driver-bundle\1.54.0\driver-bundle-1.54.0.jar;C:\Users\ksiva\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\ksiva\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\ksiva\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\ksiva\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ksiva\AppData\Local\Temp\surefire9100332638705042219\surefirebooter-20260922194145226_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ksiva\AppData\Local\Temp\surefire7519256611504572514\surefirebooter-20260922202154512_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="25.0.3+9-LTS"/>
@@ -60,4 +60,117 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
+  <testcase name="loginTest" classname="tests.LoginTest" time="10.952">
+    <system-out><![CDATA[demosite
+false
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testboxTest" classname="tests.TextBoxTest" time="12.857">
+    <failure message="Error {&#10;  message=&apos;Error: strict mode violation: locator(&quot;#submit&quot;) resolved to 4 elements:&#10;    1) &lt;button id=&quot;submit&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Logout&lt;/button&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;Logout&quot;))&#10;    2) &lt;button id=&quot;submit&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Delete Account&lt;/button&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;Delete Account&quot;))&#10;    3) &lt;button id=&quot;submit&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Delete All Books&lt;/button&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;Delete All Books&quot;))&#10;    4) &lt;button id=&quot;submit&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Delete All Books&lt;/button&gt; aka getByText(&quot;Delete All Books&quot;).nth(1)&#10;&#10;  name=&apos;Error&#10;  stack=&apos;Error: Error: strict mode violation: locator(&quot;#submit&quot;) resolved to 4 elements:&#10;    1) &lt;button id=&quot;submit&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Logout&lt;/button&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;Logout&quot;))&#10;    2) &lt;button id=&quot;submit&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Delete Account&lt;/button&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;Delete Account&quot;))&#10;    3) &lt;button id=&quot;submit&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Delete All Books&lt;/button&gt; aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName(&quot;Delete All Books&quot;))&#10;    4) &lt;button id=&quot;submit&quot; type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Delete All Books&lt;/button&gt; aka getByText(&quot;Delete All Books&quot;).nth(1)&#10;&#10;    at CRExecutionContext.evaluateWithArguments (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\chromium\crExecutionContext.js:80:13)&#10;    at async LongStandingScope._race (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\utils\isomorphic\manualPromise.js:94:14)&#10;    at async evaluateExpression (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\javascript.js:217:12)&#10;    at async C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\frames.js:901:22&#10;    at async Frame.retryWithProgressAndTimeouts (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\frames.js:871:24)&#10;    at async Frame.click (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\frames.js:944:27)&#10;    at async FrameDispatcher.click (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\dispatchers\frameDispatcher.js:117:12)&#10;    at async ProgressController.run (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\progress.js:139:41)&#10;    at async FrameDispatcher._runCommand (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\dispatchers\dispatcher.js:91:14)&#10;    at async DispatcherConnection.dispatch (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\dispatchers\dispatcher.js:322:22)&#10;}&#10;Call log:&#10;-   - waiting for locator(&quot;#submit&quot;)&#10;" type="com.microsoft.playwright.PlaywrightException"><![CDATA[com.microsoft.playwright.PlaywrightException: 
+Error {
+  message='Error: strict mode violation: locator("#submit") resolved to 4 elements:
+    1) <button id="submit" type="button" class="btn btn-primary">Logout</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Logout"))
+    2) <button id="submit" type="button" class="btn btn-primary">Delete Account</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Delete Account"))
+    3) <button id="submit" type="button" class="btn btn-primary">Delete All Books</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Delete All Books"))
+    4) <button id="submit" type="button" class="btn btn-primary">Delete All Books</button> aka getByText("Delete All Books").nth(1)
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("#submit") resolved to 4 elements:
+    1) <button id="submit" type="button" class="btn btn-primary">Logout</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Logout"))
+    2) <button id="submit" type="button" class="btn btn-primary">Delete Account</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Delete Account"))
+    3) <button id="submit" type="button" class="btn btn-primary">Delete All Books</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Delete All Books"))
+    4) <button id="submit" type="button" class="btn btn-primary">Delete All Books</button> aka getByText("Delete All Books").nth(1)
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\javascript.js:217:12)
+    at async C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\frames.js:901:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\frames.js:871:24)
+    at async Frame.click (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\frames.js:944:27)
+    at async FrameDispatcher.click (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\dispatchers\frameDispatcher.js:117:12)
+    at async ProgressController.run (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\progress.js:139:41)
+    at async FrameDispatcher._runCommand (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\dispatchers\dispatcher.js:91:14)
+    at async DispatcherConnection.dispatch (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\dispatchers\dispatcher.js:322:22)
+}
+Call log:
+-   - waiting for locator("#submit")
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:241)
+	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:232)
+	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:164)
+	at com.microsoft.playwright.Locator.click(Locator.java:2500)
+	at pages.TextboxPage.submitbutton(TextboxPage.java:32)
+	at tests.TextBoxTest.testboxTest(TextBoxTest.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Error: strict mode violation: locator("#submit") resolved to 4 elements:
+    1) <button id="submit" type="button" class="btn btn-primary">Logout</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Logout"))
+    2) <button id="submit" type="button" class="btn btn-primary">Delete Account</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Delete Account"))
+    3) <button id="submit" type="button" class="btn btn-primary">Delete All Books</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Delete All Books"))
+    4) <button id="submit" type="button" class="btn btn-primary">Delete All Books</button> aka getByText("Delete All Books").nth(1)
+
+  name='Error
+  stack='Error: Error: strict mode violation: locator("#submit") resolved to 4 elements:
+    1) <button id="submit" type="button" class="btn btn-primary">Logout</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Logout"))
+    2) <button id="submit" type="button" class="btn btn-primary">Delete Account</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Delete Account"))
+    3) <button id="submit" type="button" class="btn btn-primary">Delete All Books</button> aka getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("Delete All Books"))
+    4) <button id="submit" type="button" class="btn btn-primary">Delete All Books</button> aka getByText("Delete All Books").nth(1)
+
+    at CRExecutionContext.evaluateWithArguments (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\javascript.js:217:12)
+    at async C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\frames.js:901:22
+    at async Frame.retryWithProgressAndTimeouts (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\frames.js:871:24)
+    at async Frame.click (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\frames.js:944:27)
+    at async FrameDispatcher.click (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\dispatchers\frameDispatcher.js:117:12)
+    at async ProgressController.run (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\progress.js:139:41)
+    at async FrameDispatcher._runCommand (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\dispatchers\dispatcher.js:91:14)
+    at async DispatcherConnection.dispatch (C:\Users\ksiva\AppData\Local\Temp\playwright-java-13242413413439234148\package\lib\server\dispatchers\dispatcher.js:322:22)
+}
+Call log:
+-   - waiting for locator("#submit")
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 38 more
+]]></failure>
+  </testcase>
 </testsuite>

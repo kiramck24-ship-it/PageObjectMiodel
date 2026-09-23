@@ -1,20 +1,26 @@
 
 package tests;
+
+import org.testng.annotations.Test;
+
 import base.BaseTest;
 import pages.LoginPage;
 import pages.ProfilePage;
 import pages.TextboxPage;
 
 public class TextBoxTest extends BaseTest{
-public static void main(String[] args) {
-LoginTest test = new LoginTest();
-test.setUp();
-LoginPage login = new LoginPage(test.page);
+ @Test
+ 
+ public void testboxTest() {
+	 setUp();
+ 
+
+LoginPage login = new LoginPage(page);
 login.login("TestUser", "Test@123");
-ProfilePage profile = new ProfilePage(test.page);
+ProfilePage profile = new ProfilePage(page);
 profile.clickElement();
 profile.clickTextBox();
-TextboxPage textboxpage = new TextboxPage(test.page);
+TextboxPage textboxpage = new TextboxPage(page);
 textboxpage.enterFullname("Komal");
 textboxpage.enterEmail("komal@gmail.com");
 
@@ -24,6 +30,7 @@ textboxpage.submitbutton();
 // Assertions
 textboxpage.verifyFullnameDisplayed("Komal");
 
-test.tearDown();
+tearDown();
 }
+
 }
